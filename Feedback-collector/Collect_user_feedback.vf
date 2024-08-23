@@ -1,0 +1,3944 @@
+{
+  "version": {
+    "_version": 10.1,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [
+      {
+        "id": "sg9zy34i0",
+        "name": "Basic Conversation Path",
+        "color": "#5b9fd7",
+        "nodeIDs": [
+          "643872d482cf9d2273b905df",
+          "643872d482cf9d2273b905e1",
+          "643872d482cf9d2273b905e3"
+        ]
+      },
+      {
+        "id": "5bgq3341p",
+        "name": "Save Information",
+        "color": "#000000",
+        "nodeIDs": [
+          "6438784f82cf9d2273b90dd4",
+          "6438784f82cf9d2273b90dd6",
+          "6438784f82cf9d2273b90dd8",
+          "6438784f82cf9d2273b90dda"
+        ]
+      },
+      {
+        "id": "byav33785",
+        "name": "API Call Example",
+        "color": null,
+        "nodeIDs": [
+          "645d718f83103cca7a3cecc1",
+          "645d718f83103cca7a3cecc3",
+          "645d718f83103cca7a3cecc5",
+          "645d718f83103cca7a3cecc7"
+        ]
+      }
+    ],
+    "components": [],
+    "creatorID": 993643,
+    "manualSave": false,
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "6579c6bf984565862f64b783",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "sure",
+              "slots": []
+            },
+            {
+              "text": "certainly",
+              "slots": []
+            },
+            {
+              "text": "affirmative",
+              "slots": []
+            },
+            {
+              "text": "okay",
+              "slots": []
+            },
+            {
+              "text": "ok",
+              "slots": []
+            },
+            {
+              "text": "ya",
+              "slots": []
+            },
+            {
+              "text": "yep",
+              "slots": []
+            },
+            {
+              "text": "yup",
+              "slots": []
+            },
+            {
+              "text": "yea",
+              "slots": []
+            },
+            {
+              "text": "yes",
+              "slots": []
+            }
+          ],
+          "noteID": "yrcxy0oie",
+          "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\"."
+        },
+        {
+          "key": "6579c778dd3cca0fe0e0b152",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "negative",
+              "slots": []
+            },
+            {
+              "text": "nevermind",
+              "slots": []
+            },
+            {
+              "text": "not",
+              "slots": []
+            },
+            {
+              "text": "no thanks",
+              "slots": []
+            },
+            {
+              "text": "no way",
+              "slots": []
+            },
+            {
+              "text": "not now",
+              "slots": []
+            },
+            {
+              "text": "nah",
+              "slots": []
+            },
+            {
+              "text": "nay",
+              "slots": []
+            },
+            {
+              "text": "nope",
+              "slots": []
+            },
+            {
+              "text": "no",
+              "slots": []
+            }
+          ],
+          "noteID": "yrcxz0onn",
+          "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\"."
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logomark.png",
+        "color": "#2E7FF1",
+        "description": "Our virtual agent is here to help you.",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logomark.png",
+        "persistence": "memory",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Feedback collector",
+        "watermark": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "messages": {
+        "66c5e4a225c96c0007f55c28": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Second Option"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c2b": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "How can I help you?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c2e": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "First Option"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c31": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "What is your name?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c34": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hello "
+                        },
+                        {
+                          "text": "{name}"
+                        },
+                        {
+                          "text": " !"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c37": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Twitter is the best 🐦"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c3a": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Error"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c3d": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "This flow captures a users question and sends it to the OpenAI API"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4afff858ab78b58f875": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hey, how can I help you today?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              },
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hello, how can I assist you today?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              },
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hi there, what can I do for you?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              },
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Greetings, how may I help you today?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e4a225c96c0007f55c40": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{response}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5ecb7ff858ab78b590089": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "I couldn't find an answer to your question. You can try to reframe your question or ask me something else."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "66c5e9e2ff858ab78b58fe81": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Something went wrong."
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Collect user feedback",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "64386e21bb106b044ea34b78",
+            "storage": {},
+            "variables": {},
+            "diagramID": "64386e21bb106b044ea34b78"
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {
+          "66c21795fb0ae48b09efbbfa": {
+            "codeId": "66c5e4a2ff858ab78b58f84c-66c21795fb0ae48b09efbbfa-jbnbglna.js",
+            "inputVars": {
+              "question": {
+                "type": "text"
+              },
+              "feedback": {
+                "type": "text"
+              },
+              "airtable_token": {
+                "type": "text"
+              }
+            },
+            "outputVars": {},
+            "pathCodes": [
+              "success",
+              "error"
+            ]
+          }
+        },
+        "referencedResponseIDs": [
+          "66c5e4a225c96c0007f55c28",
+          "66c5e4a225c96c0007f55c2b",
+          "66c5e4a225c96c0007f55c2e",
+          "66c5e4a225c96c0007f55c31",
+          "66c5e4a225c96c0007f55c34",
+          "66c5e4a225c96c0007f55c37",
+          "66c5e4a225c96c0007f55c3a",
+          "66c5e4a225c96c0007f55c3d",
+          "66c5e4a225c96c0007f55c40",
+          "66c5e4afff858ab78b58f875",
+          "66c5e9e2ff858ab78b58fe81",
+          "66c5ecb7ff858ab78b590089"
+        ],
+        "slotsMap": {},
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "airtable_token": {
+            "isSystem": false,
+            "defaultValue": "pat48VfPzmtVpz8tO.e7f4de3c907216e61de2c7b47b0b37d833064b08f8d273d5d7b6661b15867fba",
+            "datatype": "any",
+            "isArray": false
+          },
+          "feedback": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          }
+        },
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {}
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64386e21bb106b044ea34b78"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "airtable_token",
+      "feedback"
+    ],
+    "_id": "66c5e4a2ff858ab78b58f84c",
+    "updatedAt": "2024-08-21T14:27:26.019Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64386e21bb106b044ea34b78"
+        ],
+        "rootDiagramID": "64386e21bb106b044ea34b78",
+        "updatedBy": 993643,
+        "updatedAt": "2024-08-21T12:59:14.365Z"
+      }
+    ],
+    "projectID": "66c5e4a2ff858ab78b58f84b",
+    "rootDiagramID": "64386e21bb106b044ea34b78",
+    "templateDiagramID": "643872531e80120007759e05"
+  },
+  "diagrams": {
+    "643872531e80120007759e05": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {
+        "643872d482cf9d2273b905df": {
+          "type": "block",
+          "data": {
+            "name": "Option 2",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905e5"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905df",
+          "coords": [
+            -432.02299332274276,
+            -334.73425308247994
+          ]
+        },
+        "643872d482cf9d2273b905e5": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c28",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905e6"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "643872d482cf9d2273b905e5"
+        },
+        "643872d482cf9d2273b905e1": {
+          "type": "block",
+          "data": {
+            "name": "Start Block",
+            "color": "#5b9fd7",
+            "steps": [
+              "643872d482cf9d2273b905e8",
+              "643872d482cf9d2273b905eb"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e1",
+          "coords": [
+            -845.4801744371416,
+            -539.5792694267975
+          ]
+        },
+        "643872d482cf9d2273b905e8": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c2b",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "643872d482cf9d2273b905eb",
+                  "id": "643872d482cf9d2273b905e9"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "643872d482cf9d2273b905e8"
+        },
+        "643872d482cf9d2273b905eb": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "noMatch": null,
+            "buttons": [
+              {
+                "id": "xr9vd34tj",
+                "name": "Path 1",
+                "actions": []
+              },
+              {
+                "id": "cl9vs34c7",
+                "name": "Path 2",
+                "actions": []
+              }
+            ],
+            "noReply": null,
+            "intentScope": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905ec"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905e3",
+                  "id": "643872d482cf9d2273b905ed",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -399.32923837159325
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -637.4918741411055,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -595.5035815819875,
+                          -542.9755028741506
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "643872d482cf9d2273b905df",
+                  "id": "643872d482cf9d2273b905ee",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -679.4801667002234,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -344.82921901334083
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -638.2515780028617,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -597.0229893055001,
+                          -307.73401942975823
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "643872d482cf9d2273b905eb"
+        },
+        "643872d482cf9d2273b905e3": {
+          "type": "block",
+          "data": {
+            "name": "Option 1",
+            "color": "",
+            "steps": [
+              "643872d482cf9d2273b905f0"
+            ]
+          },
+          "nodeID": "643872d482cf9d2273b905e3",
+          "coords": [
+            -430.5038187460724,
+            -569.9756266907931
+          ]
+        },
+        "643872d482cf9d2273b905f0": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c2e",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "643872d482cf9d2273b905f1"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "643872d482cf9d2273b905f0"
+        },
+        "6438784f82cf9d2273b90dd4": {
+          "type": "block",
+          "data": {
+            "name": "Use Logic to Route",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90ddc"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd4",
+          "coords": [
+            -1964.4846386537488,
+            -626.9744457114995
+          ]
+        },
+        "6438784f82cf9d2273b90ddc": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "If name is elon musk",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "name"
+                      },
+                      {
+                        "type": "value",
+                        "value": "elon musk"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "path",
+              "pathName": "All other names"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "6438784f82cf9d2273b90dd8",
+                  "id": "6438784f82cf9d2273b90ddd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -492.72447921623757
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1763.5243607307511,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1728.5642154893217,
+                          -440.2937029472216
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "6438784f82cf9d2273b90dda",
+                  "id": "6438784f82cf9d2273b90dde",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1798.484505972181,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -547.2244999131336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1764.1493300508728,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -1729.814154129565,
+                          -599.0438504799286
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "event": {
+                      "type": "If name is elon musk"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90ddc"
+        },
+        "6438784f82cf9d2273b90dd6": {
+          "type": "block",
+          "data": {
+            "name": "Capture Information",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de0",
+              "6438784f82cf9d2273b90de3"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd6",
+          "coords": [
+            -2376.095116200327,
+            -628.3840706346044
+          ]
+        },
+        "6438784f82cf9d2273b90de0": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c31",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90de3",
+                  "id": "6438784f82cf9d2273b90de1"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "6438784f82cf9d2273b90de0"
+        },
+        "6438784f82cf9d2273b90de3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "name"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6438784f82cf9d2273b90dd4",
+                  "id": "6438784f82cf9d2273b90de4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -2210.0950799471193,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -488.1341077200336
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2169.789872823509,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -2129.484665699899,
+                          -599.9743336839742
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6438784f82cf9d2273b90de3"
+        },
+        "6438784f82cf9d2273b90dd8": {
+          "type": "block",
+          "data": {
+            "name": "Other names",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90de7"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dd8",
+          "coords": [
+            -1563.5642881833433,
+            -467.2936955577087
+          ]
+        },
+        "6438784f82cf9d2273b90de7": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c34",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90de8"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "6438784f82cf9d2273b90de7"
+        },
+        "6438784f82cf9d2273b90dda": {
+          "type": "block",
+          "data": {
+            "name": "Elon Musk",
+            "color": "#dc8879",
+            "steps": [
+              "6438784f82cf9d2273b90dea"
+            ]
+          },
+          "nodeID": "6438784f82cf9d2273b90dda",
+          "coords": [
+            -1564.8142881833433,
+            -626.0436955577089
+          ]
+        },
+        "6438784f82cf9d2273b90dea": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c37",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6438784f82cf9d2273b90deb"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "6438784f82cf9d2273b90dea"
+        },
+        "645d718f83103cca7a3cecc1": {
+          "type": "block",
+          "data": {
+            "name": "Fail",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecc9"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc1",
+          "coords": [
+            -943.7641060825457,
+            -726.7018427371622
+          ]
+        },
+        "645d718f83103cca7a3cecc9": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c3a",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecca"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "645d718f83103cca7a3cecc9"
+        },
+        "645d718f83103cca7a3cecc3": {
+          "type": "block",
+          "data": {
+            "name": "API Call",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3ceccc"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc3",
+          "coords": [
+            -1337.282813902139,
+            -902.1537022731807
+          ]
+        },
+        "645d718f83103cca7a3ceccc": {
+          "type": "api",
+          "data": {
+            "name": "",
+            "url": "https://api.openai.com/v1/completions",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "val": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "val": "Bearer <ADD API KEY HERE>"
+              }
+            ],
+            "content": "{\n  \"model\": \"text-davinci-003\",\n  \"prompt\": \"{last_utterance}\",\n  \"max_tokens\": 7,\n  \"temperature\": 0,\n  \"top_p\": 1,\n  \"n\": 1,\n  \"stream\": false,\n  \"logprobs\": null,\n  \"stop\": \"\\n\"\n}",
+            "mappings": [
+              {
+                "path": "response",
+                "var": "response"
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd7",
+                  "id": "645d718f83103cca7a3cecce",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -748.4052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1141.0638307947715,
+                          -821.3652156062917
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1110.8438307947717,
+                          -821.3652156062917
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "645d718f83103cca7a3cecc9",
+                  "id": "645d718f83103cca7a3ceccd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1171.2838307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -693.9052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1140.5238307947716,
+                          -647.2052156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1109.7638307947714,
+                          -647.2052156062919
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3ceccc"
+        },
+        "645d718f83103cca7a3cecc5": {
+          "type": "block",
+          "data": {
+            "name": "Welcome",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd0",
+              "645d718f83103cca7a3cecd3"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc5",
+          "coords": [
+            -1722.1832079861151,
+            -907.6478276212674
+          ]
+        },
+        "645d718f83103cca7a3cecd0": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c3d",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecd3",
+                  "id": "645d718f83103cca7a3cecd1"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "645d718f83103cca7a3cecd0"
+        },
+        "645d718f83103cca7a3cecd3": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "645d718f83103cca7a3cecc3",
+                  "id": "645d718f83103cca7a3cecd4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -1556.1838307947714,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -733.6452156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1529.2338307947716,
+                          -875.1552156062919
+                        ]
+                      },
+                      {
+                        "point": [
+                          -1502.2838307947716,
+                          -875.1552156062919
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd5"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "645d718f83103cca7a3cecd3"
+        },
+        "645d718f83103cca7a3cecc7": {
+          "type": "block",
+          "data": {
+            "name": "Success",
+            "color": "#5b9fd7",
+            "steps": [
+              "645d718f83103cca7a3cecd7"
+            ]
+          },
+          "nodeID": "645d718f83103cca7a3cecc7",
+          "coords": [
+            -944.844860096504,
+            -900.8660415973322
+          ]
+        },
+        "645d718f83103cca7a3cecd7": {
+          "type": "message",
+          "data": {
+            "messageID": "66c5e4a225c96c0007f55c40",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "645d718f83103cca7a3cecd8"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Text"
+          },
+          "nodeID": "645d718f83103cca7a3cecd7"
+        }
+      },
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1681420883,
+      "creatorID": 993643,
+      "variables": [],
+      "menuItems": [],
+      "_id": "66c5e4a2ff858ab78b58f84d",
+      "diagramID": "643872531e80120007759e05",
+      "versionID": "66c5e4a2ff858ab78b58f84c"
+    },
+    "64386e21bb106b044ea34b78": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66c5e4ad2a1b7af865b70ee5",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -60.84,
+                          -704.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          -28.51,
+                          -704.69
+                        ]
+                      },
+                      {
+                        "point": [
+                          -28.51,
+                          -746.67
+                        ]
+                      },
+                      {
+                        "point": [
+                          3.82,
+                          -746.67
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -125.47306657576806,
+            -726.6861503347151
+          ]
+        },
+        "66c5e4ad2a1b7af865b70ee3": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "66c5e4d92a1b7af865b70eec",
+                  "id": "66c5e4ad2a1b7af865b70ee4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          335.22,
+                          -677.07
+                        ]
+                      },
+                      {
+                        "point": [
+                          381.94,
+                          -677.07
+                        ]
+                      },
+                      {
+                        "point": [
+                          381.94,
+                          -698.39
+                        ]
+                      },
+                      {
+                        "point": [
+                          428.67,
+                          -698.39
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "66c5e4afff858ab78b58f875"
+          },
+          "nodeID": "66c5e4ad2a1b7af865b70ee3"
+        },
+        "66c5e4ad2a1b7af865b70ee5": {
+          "type": "block",
+          "data": {
+            "name": "Greet user",
+            "steps": [
+              "66c5e4ad2a1b7af865b70ee3"
+            ],
+            "color": ""
+          },
+          "nodeID": "66c5e4ad2a1b7af865b70ee5",
+          "coords": [
+            168.81893519145376,
+            -773.6728355893272
+          ]
+        },
+        "66c5e4d92a1b7af865b70eec": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "66c787bae6b4d285ac2b68f1"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66c5e5132a1b7af865b70ef6",
+                  "id": "66c5e4d92a1b7af865b70eed",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          761.47,
+                          -689.39
+                        ]
+                      },
+                      {
+                        "point": [
+                          814.29,
+                          -689.39
+                        ]
+                      },
+                      {
+                        "point": [
+                          814.29,
+                          -705.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          867.11,
+                          -705.04
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "66c5e4d92a1b7af865b70eee"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5e4d92a1b7af865b70eec"
+        },
+        "66c5e4d92a1b7af865b70eef": {
+          "type": "block",
+          "data": {
+            "name": "Capture reply",
+            "steps": [
+              "66c5e4d92a1b7af865b70eec"
+            ],
+            "color": ""
+          },
+          "nodeID": "66c5e4d92a1b7af865b70eef",
+          "coords": [
+            595.0687409634874,
+            -776.9853413462938
+          ]
+        },
+        "66c5e5132a1b7af865b70ef6": {
+          "type": "generative",
+          "data": {
+            "name": "Response AI",
+            "mode": "prompt",
+            "prompt": "{{[user_question].66c787bae6b4d285ac2b68f1}}",
+            "system": "",
+            "maxTokens": 400,
+            "model": "gpt-4o-mini",
+            "temperature": 0.05,
+            "notFoundPath": true,
+            "overrideParams": false,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66c5e652de91dc8c6959ae3f",
+                  "id": "66c5e5132a1b7af865b70ef7",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1199.9,
+                          -704.79
+                        ]
+                      },
+                      {
+                        "point": [
+                          1280.39,
+                          -704.79
+                        ]
+                      },
+                      {
+                        "point": [
+                          1280.39,
+                          -754.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          1360.87,
+                          -754.73
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": "66c5ecb76fe904a68e623ab6",
+                  "id": "66c5e5132a1b7af865b70ef8",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1199.9,
+                          -650.54
+                        ]
+                      },
+                      {
+                        "point": [
+                          1225.18,
+                          -650.54
+                        ]
+                      },
+                      {
+                        "point": [
+                          1225.18,
+                          -490.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          1201.18,
+                          -490.92
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "source": "knowledge_base"
+          },
+          "nodeID": "66c5e5132a1b7af865b70ef6"
+        },
+        "66c5e5132a1b7af865b70ef9": {
+          "type": "block",
+          "data": {
+            "name": "Respond",
+            "steps": [
+              "66c5e5132a1b7af865b70ef6"
+            ],
+            "color": ""
+          },
+          "nodeID": "66c5e5132a1b7af865b70ef9",
+          "coords": [
+            1033.5049426793446,
+            -783.6419882435915
+          ]
+        },
+        "66c5e652de91dc8c6959ae3f": {
+          "type": "block",
+          "data": {
+            "name": "Feedback",
+            "color": "#56b365",
+            "steps": [
+              "66c5e652de91dc8c6959ae51",
+              "66c5e652de91dc8c6959ae54"
+            ]
+          },
+          "nodeID": "66c5e652de91dc8c6959ae3f",
+          "coords": [
+            1525.8710630904106,
+            -781.7258312227957
+          ]
+        },
+        "66c5e652de91dc8c6959ae41": {
+          "type": "block",
+          "data": {
+            "name": "Set feedback UP",
+            "color": "",
+            "steps": [
+              "66c5e652de91dc8c6959ae5a"
+            ]
+          },
+          "nodeID": "66c5e652de91dc8c6959ae41",
+          "coords": [
+            2068.534294000027,
+            -752.2099599841994
+          ]
+        },
+        "66c5e652de91dc8c6959ae43": {
+          "type": "block",
+          "data": {
+            "name": "Set feedback DOWN",
+            "color": "",
+            "steps": [
+              "66c5e652de91dc8c6959ae5d"
+            ]
+          },
+          "nodeID": "66c5e652de91dc8c6959ae43",
+          "coords": [
+            2072.223565374428,
+            -506.81016074258855
+          ]
+        },
+        "66c5e652de91dc8c6959ae45": {
+          "type": "block",
+          "data": {
+            "name": "Store feedback",
+            "color": "",
+            "steps": [
+              "66c5e652de91dc8c6959ae60"
+            ]
+          },
+          "nodeID": "66c5e652de91dc8c6959ae45",
+          "coords": [
+            3011.9148738097138,
+            -733.4026068087442
+          ]
+        },
+        "66c5e652de91dc8c6959ae49": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "66c5e652de91dc8c6959ae65"
+            ]
+          },
+          "nodeID": "66c5e652de91dc8c6959ae49",
+          "coords": [
+            -189.1691058442218,
+            -690.6389239542627
+          ]
+        },
+        "66c5e652de91dc8c6959ae4b": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "66c5e652de91dc8c6959ae66"
+            ]
+          },
+          "nodeID": "66c5e652de91dc8c6959ae4b",
+          "coords": [
+            -189.1691058442218,
+            -690.6389239542627
+          ]
+        },
+        "66c5e652de91dc8c6959ae51": {
+          "type": "trace",
+          "data": {
+            "name": "ext_feedback",
+            "_v": 1,
+            "paths": [
+              {
+                "label": "complete",
+                "isDefault": true
+              }
+            ],
+            "payload": {
+              "name": "ext_feedback",
+              "body": "",
+              "bodyType": "json",
+              "scope": "local",
+              "isBlocking": true
+            },
+            "defaultPath": 0,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": null,
+                  "id": "66c5e652de91dc8c6959ae52"
+                }
+              ]
+            }
+          },
+          "nodeID": "66c5e652de91dc8c6959ae51",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "66c5e652de91dc8c6959ae54": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "let feedback = last_event.payload.feedback\n\nif(feedback == 1) {\n  return 'UP'\n} else if(feedback == 0) {\n  return 'DOWN'\n}",
+            "paths": [
+              {
+                "label": "UP",
+                "key": "q53it3fcg"
+              },
+              {
+                "label": "DOWN",
+                "key": "1c76x3jek"
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "q53it3fcg": {
+                  "type": "",
+                  "target": "66c5e652de91dc8c6959ae5a",
+                  "id": "66c5e652de91dc8c6959ae57",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1692.27,
+                          -533.38
+                        ]
+                      },
+                      {
+                        "point": [
+                          1797.2,
+                          -533.38
+                        ]
+                      },
+                      {
+                        "point": [
+                          1797.2,
+                          -673.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          1902.13,
+                          -673.61
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "1c76x3jek": {
+                  "type": "",
+                  "target": "66c5e652de91dc8c6959ae5d",
+                  "id": "66c5e652de91dc8c6959ae58",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1692.27,
+                          -478.88
+                        ]
+                      },
+                      {
+                        "point": [
+                          1799.05,
+                          -478.88
+                        ]
+                      },
+                      {
+                        "point": [
+                          1799.05,
+                          -428.21
+                        ]
+                      },
+                      {
+                        "point": [
+                          1905.82,
+                          -428.21
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66c5e652de91dc8c6959ae49",
+                  "id": "66c5e652de91dc8c6959ae56",
+                  "data": {}
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "66c5e652de91dc8c6959ae55",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5e652de91dc8c6959ae54"
+        },
+        "66c5e652de91dc8c6959ae5a": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "66c5e9b1ff858ab78b58fe4f",
+                "label": null,
+                "expression": "'👍'"
+              }
+            ],
+            "title": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66c78760321ccde4d8b4130e",
+                  "id": "66c5e652de91dc8c6959ae5b",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5e652de91dc8c6959ae5a"
+        },
+        "66c5e652de91dc8c6959ae5d": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "66c5e9b1ff858ab78b58fe4f",
+                "label": null,
+                "expression": "'👎'"
+              }
+            ],
+            "title": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66c78760321ccde4d8b4130e",
+                  "id": "66c5e652de91dc8c6959ae5e",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5e652de91dc8c6959ae5d"
+        },
+        "66c5e652de91dc8c6959ae60": {
+          "type": "function",
+          "data": {
+            "functionID": "66c21795fb0ae48b09efbbfa",
+            "inputMapping": {
+              "feedback": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "66c5e9b1ff858ab78b58fe4f"
+                    },
+                    " "
+                  ]
+                }
+              ],
+              "question": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "66c787bae6b4d285ac2b68f1"
+                    },
+                    " "
+                  ]
+                }
+              ],
+              "intent": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "66c255e5fb0ae48b09efd21f"
+                    },
+                    " "
+                  ]
+                }
+              ],
+              "ai_handling": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "66c361abb97dd607d4d244e8"
+                    },
+                    " "
+                  ]
+                }
+              ],
+              "airtable_token": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "66c5e991ff858ab78b58fe3a"
+                    },
+                    " "
+                  ]
+                }
+              ],
+              "comment": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "last_utterance"
+                    },
+                    " "
+                  ]
+                }
+              ]
+            },
+            "outputMapping": {},
+            "portsV2": {
+              "byKey": {
+                "__vf__default": {
+                  "type": "",
+                  "target": "66c5e652de91dc8c6959ae4b",
+                  "id": "66c5e652de91dc8c6959ae61",
+                  "data": {}
+                },
+                "66c24c48fb0ae48b09efcf46": {
+                  "id": "66c5e9956fe904a68e623a4b",
+                  "target": "66c5e9f86fe904a68e623a63",
+                  "type": "",
+                  "data": {}
+                },
+                "66c24c4dfb0ae48b09efcf49": {
+                  "id": "66c5e9956fe904a68e623a4c",
+                  "target": "66c5e9d86fe904a68e623a59",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          3178.32,
+                          -512.8
+                        ]
+                      },
+                      {
+                        "point": [
+                          3235.56,
+                          -512.8
+                        ]
+                      },
+                      {
+                        "point": [
+                          3235.56,
+                          -651.34
+                        ]
+                      },
+                      {
+                        "point": [
+                          3292.8,
+                          -651.34
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "name": "Store feedback"
+          },
+          "nodeID": "66c5e652de91dc8c6959ae60"
+        },
+        "66c5e652de91dc8c6959ae65": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "66c5e5132a1b7af865b70ef9",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5e652de91dc8c6959ae65"
+        },
+        "66c5e652de91dc8c6959ae66": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "66bcd027f48a780abcad7120",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5e652de91dc8c6959ae66"
+        },
+        "66c5e9d86fe904a68e623a59": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66c5e9d86fe904a68e623a5a"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "66c5e9e2ff858ab78b58fe81"
+          },
+          "nodeID": "66c5e9d86fe904a68e623a59"
+        },
+        "66c5e9d86fe904a68e623a5b": {
+          "type": "block",
+          "data": {
+            "name": "Error",
+            "steps": [
+              "66c5e9d86fe904a68e623a59"
+            ],
+            "color": ""
+          },
+          "nodeID": "66c5e9d86fe904a68e623a5b",
+          "coords": [
+            3459.1960050706134,
+            -729.944696911808
+          ]
+        },
+        "66c5e9f86fe904a68e623a62": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "66c5e4d92a1b7af865b70eef",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5e9f86fe904a68e623a62"
+        },
+        "66c5e9f86fe904a68e623a63": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "66c5e9f86fe904a68e623a62"
+            ]
+          },
+          "nodeID": "66c5e9f86fe904a68e623a63",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "66c5ecb76fe904a68e623ab6": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "66c5ecb7ff858ab78b590089",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "66c5ecf96fe904a68e623ac0",
+                  "id": "66c5ecb76fe904a68e623ab7",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5ecb76fe904a68e623ab6"
+        },
+        "66c5ecb76fe904a68e623ab8": {
+          "type": "block",
+          "data": {
+            "name": "No answer",
+            "steps": [
+              "66c5ecb76fe904a68e623ab6"
+            ],
+            "color": ""
+          },
+          "nodeID": "66c5ecb76fe904a68e623ab8",
+          "coords": [
+            1034.7840152104156,
+            -569.5208581582523
+          ]
+        },
+        "66c5ecf96fe904a68e623abf": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "66c5e4d92a1b7af865b70eef",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c5ecf96fe904a68e623abf"
+        },
+        "66c5ecf96fe904a68e623ac0": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "66c5ecf96fe904a68e623abf"
+            ]
+          },
+          "nodeID": "66c5ecf96fe904a68e623ac0",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "66c78760321ccde4d8b41302": {
+          "type": "block",
+          "data": {
+            "name": "Leave extra info about feedback",
+            "color": "#dc8879",
+            "steps": [
+              "66c78760321ccde4d8b4130e",
+              "66c78760321ccde4d8b41311"
+            ]
+          },
+          "nodeID": "66c78760321ccde4d8b41302",
+          "coords": [
+            2525.58610134334,
+            -710.1632896482573
+          ]
+        },
+        "66c78760321ccde4d8b4130e": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "draft": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "66c78760321ccde4d8b4130f"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "66c7877ae6b4d285ac2b68c0"
+          },
+          "nodeID": "66c78760321ccde4d8b4130e"
+        },
+        "66c78760321ccde4d8b41311": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "75cw3j1y",
+                "name": "No comment",
+                "actions": []
+              }
+            ],
+            "intentScope": "NODE",
+            "noMatch": {
+              "types": [
+                "path"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": []
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "66c5e652de91dc8c6959ae45",
+                  "id": "66c78760321ccde4d8b41312",
+                  "data": {}
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "66c7881b321ccde4d8b41340",
+                  "id": "66c78760321ccde4d8b41313",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "66c78760321ccde4d8b41311"
+        },
+        "66c7881b321ccde4d8b4133f": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "66c5e4d92a1b7af865b70eef",
+            "diagramID": "64386e21bb106b044ea34b78",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "66c7881b321ccde4d8b4133f"
+        },
+        "66c7881b321ccde4d8b41340": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "66c7881b321ccde4d8b4133f"
+            ]
+          },
+          "nodeID": "66c7881b321ccde4d8b41340",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "66c85d4e321ccde4d8b41615": {
+          "type": "trace",
+          "data": {
+            "name": "",
+            "_v": 1,
+            "paths": [
+              {
+                "label": "",
+                "isDefault": true
+              }
+            ],
+            "payload": {
+              "name": "",
+              "body": "",
+              "bodyType": "json",
+              "scope": "local",
+              "isBlocking": false
+            },
+            "defaultPath": 0,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": null,
+                  "id": "66c85d4e321ccde4d8b41616"
+                }
+              ]
+            }
+          },
+          "nodeID": "66c85d4e321ccde4d8b41615"
+        },
+        "66c85d4e321ccde4d8b41617": {
+          "type": "block",
+          "data": {
+            "name": "New Block 11",
+            "steps": [
+              "66c85d4e321ccde4d8b41615"
+            ]
+          },
+          "nodeID": "66c85d4e321ccde4d8b41617",
+          "coords": [
+            1511.624708756862,
+            -232.62840561608616
+          ]
+        }
+      },
+      "offsetX": 660.3784532606145,
+      "offsetY": 881.3489202677721,
+      "modified": 1681419809,
+      "creatorID": 993643,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "66c5e4a2ff858ab78b58f84e",
+      "diagramID": "64386e21bb106b044ea34b78",
+      "versionID": "66c5e4a2ff858ab78b58f84c"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "6579c6bf984565862f64b783",
+      "name": "Yes",
+      "createdByID": 993643,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\".",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "6579c778dd3cca0fe0e0b152",
+      "name": "No",
+      "createdByID": 993643,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\".",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 993643,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    }
+  ],
+  "utterances": [
+    {
+      "id": "65d72a6aa845250f3bd1b9af",
+      "text": [
+        {
+          "text": [
+            "sure"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b0",
+      "text": [
+        {
+          "text": [
+            "certainly"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b1",
+      "text": [
+        {
+          "text": [
+            "affirmative"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b2",
+      "text": [
+        {
+          "text": [
+            "okay"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b3",
+      "text": [
+        {
+          "text": [
+            "ok"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b4",
+      "text": [
+        {
+          "text": [
+            "ya"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b5",
+      "text": [
+        {
+          "text": [
+            "yep"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b6",
+      "text": [
+        {
+          "text": [
+            "yup"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b7",
+      "text": [
+        {
+          "text": [
+            "yea"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b8",
+      "text": [
+        {
+          "text": [
+            "yes"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9b9",
+      "text": [
+        {
+          "text": [
+            "negative"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9ba",
+      "text": [
+        {
+          "text": [
+            "nevermind"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bb",
+      "text": [
+        {
+          "text": [
+            "not"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bc",
+      "text": [
+        {
+          "text": [
+            "no thanks"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bd",
+      "text": [
+        {
+          "text": [
+            "no way"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9be",
+      "text": [
+        {
+          "text": [
+            "not now"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9bf",
+      "text": [
+        {
+          "text": [
+            "nah"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9c0",
+      "text": [
+        {
+          "text": [
+            "nay"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9c1",
+      "text": [
+        {
+          "text": [
+            "nope"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "65d72a6aa845250f3bd1b9c2",
+      "text": [
+        {
+          "text": [
+            "no"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "66c5e4a225c96c0007f55c28",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c2b",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c2e",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c31",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c34",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c37",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c3a",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c3d",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4afff858ab78b58f872",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2024-08-21T12:59:28.000Z",
+      "updatedAt": "2024-08-21T12:59:28.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4afff858ab78b58f875",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:28.000Z",
+      "updatedAt": "2024-08-21T12:59:42.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c40",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c43",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c46",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c49",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c7877ae6b4d285ac2b68c0",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-22T18:46:19.000Z",
+      "updatedAt": "2024-08-22T18:46:35.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5ecb7ff858ab78b590089",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T13:33:44.000Z",
+      "updatedAt": "2024-08-21T13:34:43.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e618ff858ab78b58f9a0",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": true,
+      "createdAt": "2024-08-21T13:05:29.000Z",
+      "updatedAt": "2024-08-21T13:05:29.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e9e2ff858ab78b58fe81",
+      "name": "",
+      "createdByID": 993643,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2024-08-21T13:21:38.000Z",
+      "updatedAt": "2024-08-21T13:21:54.000Z",
+      "updatedByID": 993643
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "66c5e4afff858ab78b58f874",
+      "discriminatorID": "66c5e4afff858ab78b58f873",
+      "text": [
+        ""
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:28.000Z"
+    },
+    {
+      "id": "66c5e9e2ff858ab78b58fe83",
+      "discriminatorID": "66c5e9e2ff858ab78b58fe82",
+      "text": [
+        {
+          "text": [
+            "Something went wrong."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T13:21:38.000Z"
+    },
+    {
+      "id": "66c5e618ff858ab78b58f9a2",
+      "discriminatorID": "66c5e618ff858ab78b58f9a1",
+      "text": [
+        ""
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T13:05:29.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c2a",
+      "discriminatorID": "66c5e4a225c96c0007f55c29",
+      "text": [
+        {
+          "text": [
+            "Second Option"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c2d",
+      "discriminatorID": "66c5e4a225c96c0007f55c2c",
+      "text": [
+        {
+          "text": [
+            "How can I help you?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c30",
+      "discriminatorID": "66c5e4a225c96c0007f55c2f",
+      "text": [
+        {
+          "text": [
+            "First Option"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c33",
+      "discriminatorID": "66c5e4a225c96c0007f55c32",
+      "text": [
+        {
+          "text": [
+            "What is your name?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c36",
+      "discriminatorID": "66c5e4a225c96c0007f55c35",
+      "text": [
+        {
+          "text": [
+            "Hello ",
+            {
+              "variableID": "name"
+            },
+            " !"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c39",
+      "discriminatorID": "66c5e4a225c96c0007f55c38",
+      "text": [
+        {
+          "text": [
+            "Twitter is the best 🐦"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c3c",
+      "discriminatorID": "66c5e4a225c96c0007f55c3b",
+      "text": [
+        {
+          "text": [
+            "Error"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c3f",
+      "discriminatorID": "66c5e4a225c96c0007f55c3e",
+      "text": [
+        {
+          "text": [
+            "This flow captures a users question and sends it to the OpenAI API"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c42",
+      "discriminatorID": "66c5e4a225c96c0007f55c41",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "response"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c45",
+      "discriminatorID": "66c5e4a225c96c0007f55c44",
+      "text": [
+        {
+          "text": [
+            {
+              "text": [
+                "Ask any question"
+              ],
+              "attributes": {
+                "__type": "text",
+                "fontWeight": "700"
+              }
+            },
+            ", and we'll use the response AI step to provide a response."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c48",
+      "discriminatorID": "66c5e4a225c96c0007f55c47",
+      "text": [
+        {
+          "text": [
+            "I am an AI assistant powered by your ",
+            {
+              "text": [
+                "custom knowledge base"
+              ],
+              "attributes": {
+                "__type": "text",
+                "fontWeight": "700"
+              }
+            },
+            "."
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Ask me anything or click a button below! 👇🏾"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c4b",
+      "discriminatorID": "66c5e4a225c96c0007f55c4a",
+      "text": [
+        {
+          "text": [
+            "Goodbye!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4afff858ab78b58f877",
+      "discriminatorID": "66c5e4afff858ab78b58f876",
+      "text": [
+        {
+          "text": [
+            "Hey, how can I help you today?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:28.000Z"
+    },
+    {
+      "id": "66c5e4c5ff858ab78b58f886",
+      "discriminatorID": "66c5e4afff858ab78b58f876",
+      "text": [
+        {
+          "text": [
+            "Hello, how can I assist you today?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:50.000Z"
+    },
+    {
+      "id": "66c5e4c5ff858ab78b58f887",
+      "discriminatorID": "66c5e4afff858ab78b58f876",
+      "text": [
+        {
+          "text": [
+            "Hi there, what can I do for you?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:50.000Z"
+    },
+    {
+      "id": "66c5e4c5ff858ab78b58f888",
+      "discriminatorID": "66c5e4afff858ab78b58f876",
+      "text": [
+        {
+          "text": [
+            "Greetings, how may I help you today?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T12:59:50.000Z"
+    },
+    {
+      "id": "66c5ecb7ff858ab78b59008b",
+      "discriminatorID": "66c5ecb7ff858ab78b59008a",
+      "text": [
+        {
+          "text": [
+            "I couldn't find an answer to your question. You can try to reframe your question or ask me something else."
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-21T13:33:44.000Z"
+    },
+    {
+      "id": "66c7877ae6b4d285ac2b68c2",
+      "discriminatorID": "66c7877ae6b4d285ac2b68c1",
+      "text": [
+        {
+          "text": [
+            "Leave a comment:"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2024-08-22T18:46:19.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "66c5e618ff858ab78b58f9a1",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e618ff858ab78b58f9a0",
+      "variantOrder": [
+        "66c5e618ff858ab78b58f9a2"
+      ],
+      "createdAt": "2024-08-21T13:05:29.000Z"
+    },
+    {
+      "id": "66c5e9e2ff858ab78b58fe82",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e9e2ff858ab78b58fe81",
+      "variantOrder": [
+        "66c5e9e2ff858ab78b58fe83"
+      ],
+      "createdAt": "2024-08-21T13:21:38.000Z"
+    },
+    {
+      "id": "66c5ecb7ff858ab78b59008a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5ecb7ff858ab78b590089",
+      "variantOrder": [
+        "66c5ecb7ff858ab78b59008b"
+      ],
+      "createdAt": "2024-08-21T13:33:44.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c29",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c28",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c2a"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c2c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c2b",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c2d"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c2f",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c2e",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c30"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c32",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c31",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c33"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c35",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c34",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c36"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c38",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c37",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c39"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c3b",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c3a",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c3c"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c3e",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c3d",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c3f"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c41",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c40",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c42"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c44",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c43",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c45"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c47",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c46",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c48"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4a225c96c0007f55c4a",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4a225c96c0007f55c49",
+      "variantOrder": [
+        "66c5e4a225c96c0007f55c4b"
+      ],
+      "createdAt": "2024-08-21T12:59:14.000Z"
+    },
+    {
+      "id": "66c5e4afff858ab78b58f873",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4afff858ab78b58f872",
+      "variantOrder": [
+        "66c5e4afff858ab78b58f874"
+      ],
+      "createdAt": "2024-08-21T12:59:28.000Z"
+    },
+    {
+      "id": "66c5e4afff858ab78b58f876",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c5e4afff858ab78b58f875",
+      "variantOrder": [
+        "66c5e4afff858ab78b58f877",
+        "66c5e4c5ff858ab78b58f886",
+        "66c5e4c5ff858ab78b58f887",
+        "66c5e4c5ff858ab78b58f888"
+      ],
+      "createdAt": "2024-08-21T12:59:28.000Z"
+    },
+    {
+      "id": "66c7877ae6b4d285ac2b68c1",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "66c7877ae6b4d285ac2b68c0",
+      "variantOrder": [
+        "66c7877ae6b4d285ac2b68c2"
+      ],
+      "createdAt": "2024-08-22T18:46:19.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-21T12:59:14.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e991ff858ab78b58fe3a",
+      "name": "airtable_token",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": "pat48VfPzmtVpz8tO.e7f4de3c907216e61de2c7b47b0b37d833064b08f8d273d5d7b6661b15867fba",
+      "createdAt": "2024-08-21T13:20:18.000Z",
+      "updatedAt": "2024-08-21T13:20:18.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c5e9b1ff858ab78b58fe4f",
+      "name": "feedback",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-08-21T13:20:50.000Z",
+      "updatedAt": "2024-08-21T13:20:50.000Z",
+      "updatedByID": 993643
+    },
+    {
+      "id": "66c787bae6b4d285ac2b68f1",
+      "name": "user_question",
+      "createdByID": 993643,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-08-22T18:47:23.000Z",
+      "updatedAt": "2024-08-22T18:47:23.000Z",
+      "updatedByID": 993643
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66bce2816d87f80007187826",
+      "name": "Home",
+      "createdByID": 993643,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64386e21bb106b044ea34b78",
+      "assigneeID": null,
+      "description": null,
+      "createdAt": "2024-08-21T12:59:14.000Z",
+      "updatedAt": "2024-08-23T10:16:16.000Z",
+      "updatedByID": 993643
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "functions": [
+    {
+      "id": "66c21795fb0ae48b09efbbfa",
+      "name": "Store feedback",
+      "createdByID": 993643,
+      "folderID": null,
+      "code": "export default async function main(args) {\n   // Extract input variables from args\n  const { question, feedback, airtable_token, comment } = args.inputVars;\n\n  // Validate that the required input variable is provided\n  if (!question || !feedback || !airtable_token || !comment) {\n    return {\n      next: { path: 'error' },\n    };\n  }\n\n  const body = JSON.stringify({\n  records: [\n    {\n      fields: {\n        Question: question,\n        Feedback: feedback,\n        Extra_comment: comment,\n      }\n    }\n  ]\n  });\n\n  // REPLACE WITH YOUR AIRTABLE URL\n  const url = \"https://api.airtable.com/v0/appmafzBHyeBU3R2x/Users%20feedback?maxRecords=3&view=Grid%20view\";\n  // Configure the fetch request\n  const config = {\n    method: 'POST',\n    headers: {\n      'Content-Type': 'application/json',\n      'Authorization': `Bearer ${airtable_token}`,\n    },\n      body: body\n  };\n\n  try {\n    // Make the API call\n    const response = await fetch(url, config);\n\n    // Check if the response status is OK\n    if (!response.ok) {\n      throw new Error(`HTTP error! status: ${response.status}`);\n    }\n\n    // Extract the JSON body from the response\n    const responseBody = response.json;\n\n    // Validate the responseBody structure as expected\n    if (!responseBody || typeof responseBody !== 'object') {\n      throw new Error(\"Invalid or missing response body from the API\");\n    }\n\n    // Create the success return object with extracted data\n    return {\n      next: { path: 'success' },\n      trace: [\n        { \n          type: \"text\", \n          payload: { message: 'Thank you for your feedback. Ask me a different question.' }\n        }\n      ]\n    };\n  } catch (error) {\n    return {\n      next: { path: 'error' },\n      trace: [{ type: \"debug\", payload: \"Error\"}]\n    };Run\n  }\n}",
+      "image": "https://cm4-production-assets.s3.amazonaws.com/1723996707751-images.png",
+      "description": "Gather user feedbach about KB answer",
+      "pathOrder": [
+        "66c24c48fb0ae48b09efcf46",
+        "66c24c4dfb0ae48b09efcf49"
+      ],
+      "createdAt": "2024-08-21T13:10:48.000Z",
+      "updatedAt": "2024-08-23T14:24:09.000Z",
+      "updatedByID": 993643
+    }
+  ],
+  "functionPaths": [
+    {
+      "id": "66c24c48fb0ae48b09efcf46",
+      "name": "success",
+      "label": "",
+      "functionID": "66c21795fb0ae48b09efbbfa",
+      "createdAt": "2024-08-21T13:10:47.743Z"
+    },
+    {
+      "id": "66c24c4dfb0ae48b09efcf49",
+      "name": "error",
+      "label": "",
+      "functionID": "66c21795fb0ae48b09efbbfa",
+      "createdAt": "2024-08-21T13:10:47.744Z"
+    }
+  ],
+  "functionVariables": [
+    {
+      "id": "66c2194efb0ae48b09efbc95",
+      "name": "question",
+      "type": "input",
+      "functionID": "66c21795fb0ae48b09efbbfa",
+      "description": "",
+      "createdAt": "2024-08-21T13:10:47.743Z"
+    },
+    {
+      "id": "66c21954fb0ae48b09efbc97",
+      "name": "feedback",
+      "type": "input",
+      "functionID": "66c21795fb0ae48b09efbbfa",
+      "description": "",
+      "createdAt": "2024-08-21T13:10:47.744Z"
+    },
+    {
+      "id": "66c5e8ecff858ab78b58fe04",
+      "name": "airtable_token",
+      "type": "input",
+      "functionID": "66c21795fb0ae48b09efbbfa",
+      "description": "",
+      "createdAt": "2024-08-21T13:17:32.838Z"
+    },
+    {
+      "id": "66c78907e6b4d285ac2b69f5",
+      "name": "comment",
+      "type": "input",
+      "functionID": "66c21795fb0ae48b09efbbfa",
+      "description": "",
+      "createdAt": "2024-08-22T18:52:55.276Z"
+    }
+  ],
+  "project": {
+    "type": "chat",
+    "name": "Collect user feedback",
+    "image": "",
+    "teamID": "9YnzP4lXkb",
+    "members": [],
+    "privacy": "private",
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 993643,
+    "updatedBy": 993643,
+    "apiPrivacy": "public",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "66c5e4a2ff858ab78b58f84b",
+    "updatedAt": "2024-08-22T18:49:51.926Z",
+    "knowledgeBase": {
+      "settings": {
+        "summarization": {
+          "model": "gpt-4o-mini",
+          "system": "You are an FAQ AI chat assistant. Information will be provided to help answer the user's questions. Always summarize your response to be as brief as possible and be extremely concise. Your responses should be fewer than a couple of sentences.",
+          "temperature": 0,
+          "mode": "prompt",
+          "prompt": "",
+          "maxTokens": 682
+        },
+        "chunkStrategy": {
+          "type": "recursive_text_splitter",
+          "size": 1200,
+          "overlap": 200
+        },
+        "search": {
+          "limit": 3,
+          "metric": "IP"
+        },
+        "embeddingModel": {
+          "model": "text-embedding-3-large",
+          "size": 1024
+        }
+      },
+      "documents": {
+        "66c5f91cd3e950b3967608be": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "kb_feedback.txt",
+            "canEdit": false
+          },
+          "updatedAt": "2024-08-21T14:26:36.068Z",
+          "creatorID": 993643,
+          "documentID": "66c5f91cd3e950b3967608be",
+          "tags": [],
+          "s3ObjectRef": "66c5e4a2ff858ab78b58f84b/kb_feedback.txt",
+          "version": 0
+        }
+      }
+    },
+    "devVersion": "66c5e4a2ff858ab78b58f84c",
+    "liveVersion": "66c5ed815c272ff82621f9aa"
+  },
+  "_version": "1.2",
+  "variableStates": []
+}
